@@ -1,0 +1,47 @@
+{
+  "name": "test-task-autocenter",
+  "version": "1.0.0",
+  "description": "Тестовое задание по верстке страницы автосервиса по макету в figma.",
+  "main": "gulpfile.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp build",
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/13epanda/test-task-autocenter.git"
+  },
+  "author": "13epanda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/13epanda/test-task-autocenter/issues"
+  },
+  "homepage": "https://github.com/13epanda/test-task-autocenter#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "browser-sync": "^2.27.11",
+    "del": "^7.0.0",
+    "gulp": "^4.0.2",
+    "gulp-cached": "^1.1.1",
+    "gulp-csso": "^4.0.1",
+    "gulp-file-include": "^2.3.0",
+    "gulp-libsquoosh": "^1.1.2",
+    "gulp-notify": "^4.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.1",
+    "gulp-pug": "^5.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-replace": "^1.1.4",
+    "gulp-sass": "^5.1.0",
+    "gulp-svgmin": "^4.1.0",
+    "gulp-svgstore": "^9.0.0",
+    "gulp-webp-html-nosvg": "^1.1.1",
+    "sass": "^1.58.0",
+    "stylelint": "^14.16.1"
+  },
+  "dependencies": {
+    "eslint": "^8.33.0"
+  }
+}
