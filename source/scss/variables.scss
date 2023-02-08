@@ -1,0 +1,55 @@
+// Colors
+// ---------------------------------
+
+$color-default-black:               #000000;
+$color-default-white:               #ffffff;
+$color-transparent:                 rgba(255, 255, 255, 0);
+
+$color-amber:                       #fec110;
+$color-valencia:                    #D9534F;
+$color-tangerine-yellow:            #ffcc00;
+$color-medium-sea-green:            #34c759;
+$color-night-rider:                 #2c2c2c;
+$color-nobel:                       #989898;
+$color-white-smoke:                 #f4f4f4;
+$color-whisper:                     #e4e4e4;
+$color-swamp:                       #313232;
+$color-pink-swan:                   #b6b6b6;
+$color-whisper-2:                   #eeecec;
+
+// Shadow
+// ---------------------------------
+
+$shadow-default:                    box-shadow 0px 2px 15px rgba(44, 44, 44, 0.15);
+
+
+// Typography
+// ---------------------------------
+
+$fz-default:                        16px;
+
+$ff-arialNova:                      "Arial Nova", "Arial", sans-serif;
+
+
+// Animation
+// ---------------------------------
+
+$tf-default:                        ease;
+$trans-default:                     0.3s $tf-default;
+
+// Viewports
+// ---------------------------------
+
+$vp-320:                            320px;
+$vp-375:                            375px;
+$vp-768:                            768px;
+$vp-1024:                           1024px;
+$vp-1280:                           1280px;
+$vp-1440:                           1440px;
+$vp-1920:                           1920px;
+
+// Retina
+// ---------------------------------
+
+$retina-dpi:                        144dpi;
+$retina-dppx:                       1.5dppx;
