@@ -1,0 +1,21 @@
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Arial Nova";
+
+  font-display: swap;
+  src:
+    url("../fonts/arial-nova.woff2") format("woff2"),
+    url("../fonts/arial-nova.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "Arial Nova";
+
+  font-display: swap;
+  src:
+    url("../fonts/arial-nova-bold.woff2") format("woff2"),
+    url("../fonts/arial-nova-bold.woff") format("woff");
+}
