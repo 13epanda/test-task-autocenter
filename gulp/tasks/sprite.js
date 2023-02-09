@@ -9,6 +9,6 @@ export const sprite = () => {
         .pipe(svgstore({
             inlineSvg: true
         }))
-        .pipe(rename('sprite.svg'))
+        .pipe(rename('sprite-auto.svg'))
         .pipe(app.gulp.dest(app.path.build.img));
 }

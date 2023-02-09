@@ -6,7 +6,7 @@ const copyImages = () => {
 const copy = (done) => {
     app.gulp.src([
         `${app.path.srcFolder}/fonts/*.{woff2,woff}`,
-        `${app.path.srcFolder}/*.ico`,
+        `${app.path.srcFolder}/favicon/**/*`,
     ], {
         base: 'source'
     })
