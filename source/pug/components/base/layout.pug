@@ -1,0 +1,35 @@
+doctype html
+
+include ../components
+
+block variables
+
+html(lang="ru")
+    head
+        title= title
+        meta(charset="utf-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        meta(name="description", content="Тестовое задание на вакансию Frontend")
+        link(rel="icon" href="favicon/favicon.ico")
+        link(rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png")
+        link(rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png")
+        link(rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png")
+        link(rel="manifest" href="./img/favicon/site.webmanifest" crossorigin="use-credentials")
+
+        link(rel="preload", href="fonts/arial-nova.woff2", as="font", crossorigin="anonymous")
+        link(rel="preload", href="fonts/arial-nova-bold.woff2", as="font", crossorigin="anonymous")
+
+        link(rel="stylesheet", href="css/style.min.css" media="screen")
+
+    body
+        if (hasHeader)
+            +header(headerMods, currentUrl)
+
+        block main
+
+        if (hasFooter)
+            +footer(footerMods)
+
+        script(src="js/vendor.min.js")
+        script(src="js/main.min.js")

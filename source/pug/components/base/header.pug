@@ -1,0 +1,38 @@
+mixin header(headerMods, currentUrl)
+  -
+    const navLinks = [
+      {href: "#",text: "Услуги", dropdown: true,
+        dropdownLinks: [
+          {href: "#", text: "Ремонт автомобиля"},
+          {href: "#", text: "Плавное ТО"},
+          {href: "#", text: "Диагностика и ремонт"},
+          {href: "#", text: "Чип тюнинг"},
+        ]
+      },
+      {href: "#",text: "О компании"},
+      {href: "#",text: "Гарантии"},
+      {href: "#",text: "Новости"},
+      {href: "#",text: "Акции"},
+      {href: "#",text: "Контакты"},
+    ]
+  header.header(class=headerMods)
+    .content.header__wrapper
+      +icon("logo", 164, 60)
+      nav.header__nav
+        ul.header__list
+            each link in navLinks
+              li.main-nav__item
+                span.main-nav__link.main-nav__link--current=link.text
+                  if link.dropdown
+                    .main-nav__dropdown
+                      button.main-nav__link.main-nav__link--dropdown=link.text
+                      .main-nav__dropdown-list
+                        each dropdownlink in link.dropdownLinks
+                          .main-nav__dropdown-item
+                            a(href=dropdownlink.href).main-nav__dropdown-link=dropdownlink.title
+      button.header__toggle.btn-reset(type="button", aria-label="Переключатель отображения меню", aria-pressed="false")
+        +icon("burger", 20, 12)(class="header__toggle-open")
+        +icon("close", 20, 16)(class="header__toggle-close")
+      button(type="button", aria-label="Переключатель отображения меню", aria-pressed="false")
+        span Запись на сервис
+
