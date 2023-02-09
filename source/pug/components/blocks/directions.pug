@@ -1,0 +1,19 @@
+mixin directions()
+    -
+        const directions = [
+
+    ]
+
+    select.directions
+        h2 Обслуживаем и ремонтируем
+        .swiper
+            .swiper-wrapper
+{name: "volvo", alt: "Логотип фирмы Volvo."},
+{name: "landrover", alt: "Логотип фирмы Land Rover."},
+{name: "mercedes", alt: "Логотип фирмы Mercedes."},
+{name: "bmv", alt: "Логотип фирмы BMV."},
+{name: "porsche", alt: "Логотип фирмы Porsche."},
+{name: "skoda", alt: "Логотип фирмы Skoda."},         .swiper-slide
+                    each direction in directions
+                        .directions__item
+                            +img("directions", direction.name, "png", 200, 200, direction.alt)

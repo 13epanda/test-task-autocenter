@@ -1,0 +1,52 @@
+.advantage {
+    padding-top: 90px;
+    padding-bottom: 90px;
+
+    &__title {
+        padding-top: 10px;
+        margin-bottom: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+        border-top: 1px solid $color-pink-swan;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        color: $color-night-rider;
+
+        span {
+            color: $color-nobel;    
+        }
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    &__subtitle {
+        width: 50%;
+        font-weight: 400;
+        font-size: 90px;
+        line-height: 81px;
+        letter-spacing: -0.04em;
+        color: $color-amber;
+    }
+
+    &__discription {
+        p {
+            margin-top: 0;
+            margin-bottom: 28px;
+            font-weight: 400;
+            font-size: 28px;
+            line-height: 34px;
+            letter-spacing: -0.02em;
+            color: $color-night-rider;
+        }
+    }
+}

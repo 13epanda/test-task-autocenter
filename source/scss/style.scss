@@ -1,0 +1,20 @@
+// Global
+// ---------------------------------
+
+@import "global/reboot.scss";
+@import "global/utils.scss";
+@import "global/container.scss";
+@import "global/fonts.scss";
+// Swiper 7.4.1
+@import "global/swiper.scss";
+
+@import "mixins";
+@import "variables.scss";
+
+// Blocks
+// ---------------------------------
+
+@import "blocks/btn.scss";
+@import "blocks/main-screen.scss";
+@import "blocks/advantage.scss";
+@import "blocks/services.scss";

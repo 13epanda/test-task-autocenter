@@ -1,0 +1,59 @@
+.btn-scroll {
+  min-width: 149px;
+  height: 60px;
+  padding: 20px 40px;
+  background-color: $color-amber;
+  border-radius: 7px;
+
+  span {
+    margin-left: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: $color-night-rider;
+  }
+
+  svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+  }
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover,
+    &:focus {
+      background-color: $color-white;
+    }
+  }
+}
+
+.btn-link {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  &--light {
+    background-color: $color-amber;
+
+    &:hover,
+    &:focus {
+      background-color: $color-swamp;
+    }
+  }
+
+  &--dark {
+    &:hover,
+    &:focus {
+      background-color: $color-white;
+    }
+  }
+}

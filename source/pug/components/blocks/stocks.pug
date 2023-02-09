@@ -1,0 +1,32 @@
+mixin stocks()
+    - 
+        const stocks = [
+            {
+                text: "Дарим 1000 бонусов за шиномонтаж и хранение", 
+                date: "11 апреля", 
+                imgName: "tire", 
+                imgAlt: "Фотография шины в монохроме.",
+                link: ""
+            },
+            {
+                text: "Специальное предложение для владельцев VOLVO XC 90", 
+                date: "18 ноября", 
+                imgName: "", 
+                imgAlt: "Черная машина марки VOLVO XC90.",
+                link: ""
+            },
+        ]
+
+    select.container.stocks
+        h2 Наши акции
+        .swiper 
+            .swiper-wrapper 
+                .swiper-slide
+                    each stock in stocks
+                        +picture("", stock.imgName, "jpg", 880, 550, stock.imgAlt)
+                        p.stocks__title= stock.text
+                        span.stocks__date= stock.date
+                        +btn-link(stock.link, "light", "Подробнее")
+            .swiper-button-prev
+            .swiper-button-next
+

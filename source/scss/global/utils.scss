@@ -18,12 +18,12 @@
 }
 
 .visually-hidden {
-  position: absolute !important;
+  position: absolute;
 
-  width: 1px !important;
+  width: 1px;
   height: 1px;
   margin: -1px;
-  padding: 0 !important;
+  padding: 0;
   overflow: hidden;
 
   white-space: nowrap;
@@ -54,8 +54,7 @@
 }
 
 .no-transition {
-  /* stylelint-disable-next-line */
-  transition: none !important;
+  transition: none;
 }
 
 .mobile-hidden {
