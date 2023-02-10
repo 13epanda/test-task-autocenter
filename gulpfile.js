@@ -11,7 +11,7 @@ global.app = {
 
 //Импорт задач
 import { copy, copyImages} from "./gulp/tasks/copy.js";
-import { reset } from "./gulp/tasks/reset.js"; 
+import { reset } from "./gulp/tasks/reset.js";
 import { pugToHtml } from "./gulp/tasks/pugToHtml.js";
 import { scripts } from "./gulp/tasks/scripts.js";
 import { styles } from "./gulp/tasks/styles.js";
@@ -29,17 +29,16 @@ function watcher() {
 }
 
 const mainTasks = gulp.parallel(
-    styles, 
-    pugToHtml, 
-    scripts, 
-    svg, 
-    sprite, 
+    styles,
+    pugToHtml,
+    scripts,
+    svg,
     createWebp
 );
 
 //Построение сценария выполнения задач
-const dev = gulp.series(reset, copy, optimizeImages, mainTasks, watcher);
-const build = gulp.series(reset, copy, optimizeImages, mainTasks);
+const dev = gulp.series(reset, copy, optimizeImages, sprite, mainTasks, watcher);
+const build = gulp.series(reset, copy, optimizeImages, sprite, mainTasks);
 
 gulp.task('default', dev);
 gulp.task('build', build);

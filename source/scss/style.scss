@@ -1,6 +1,8 @@
 // Global
 // ---------------------------------
 
+@import "variables.scss";
+@import "mixins";
 @import "global/reboot.scss";
 @import "global/utils.scss";
 @import "global/container.scss";
@@ -8,8 +10,6 @@
 // Swiper 7.4.1
 @import "global/swiper.scss";
 
-@import "mixins";
-@import "variables.scss";
 
 // Blocks
 // ---------------------------------
