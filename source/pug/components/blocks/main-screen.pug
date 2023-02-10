@@ -7,15 +7,15 @@ mixin main-screen()
       h2.visual-hidden Главный экран
       a.main-screen__phone(href="tel:+79991234567") +7 (999) 123-45-67
       dl.main-screen__contacts
-        dt Работаем для вас: 
+        dt Работаем для вас:
         dd Ежедневно с 9:00 до 21:00
-        dt По адресу: 
+        dt По адресу:
         dd Екатеринбург, ул. Московский тракт 7 км, 2
-      +btn-screen("Смотреть услуги","#services")
+      +btn-scroll("Смотреть услуги","#services")
     .swiper.main-screen__slider
-      .swiper-wrapper 
+      .swiper-wrapper
         .swiper-slide
-          each slide in slider 
+          each slide in slider
             +img("conten",slide,jpg,780,650)
       .swiper-pagination
       .swiper-button-prev
