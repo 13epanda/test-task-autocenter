@@ -1,7 +1,7 @@
-mixin btn-link(href, type, text)
-  - const type = type ? `btn-link--${type}` : "btn-link--light";
+mixin btn-link(href, typeButton, textButton)
+  - const type = typeButton ? `btn-link--${typeButton}` : "btn-link--light"
 
   a.btn-link(class=type, href=href, arial-lable="Ссылка для перехода к разделу.")
     +icon("arrow-2", "24", "24")
-    if text
-      span= text
+    if textButton
+      span= textButton

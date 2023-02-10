@@ -1,22 +1,20 @@
 mixin services()
-    - 
-        const services = [
+    -
+        const servicesList = [
             {text: "Ремонт автомобиля", name: "", link: "", path: "", alt: "Открытый капот автомобиля и руки мастера."},
             {text: "Плановое ТО", name: "", link: "", path: "", alt: "Машина заполняется качественным маслом."},
             {text: "Диагностика и ремонт", name: "", link: "", path: "", alt: "Мужчина проводит диагностику автомобиля."},
             {text: "Чип тюнинг", name: "", link: "", path: "", alt: "Монитор с настройками для автомобиля."},
         ]
-    
+
     section.container.services
         h2 Услуги автосервиса
         ul.services__list
-            each service in services
-                - let count = 0;
-                li.services__item 
-                    +picture(service.path, service.name, service.jpg, 650, 360, service.alt)
-                    .services__wrapper 
+            each service in servicesList
+                li.services__item
+                    +picture(service.path, service.name, "jpg", 650, 360, service.alt)
+                        .services__wrapper
                         .services__text
                             p service.text
-                            span `0${count}`
+                            span 01
                         +btn-link(service.href)
-                - count += 1;

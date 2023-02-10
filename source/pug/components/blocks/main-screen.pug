@@ -1,10 +1,15 @@
 mixin main-screen()
-  - const slider = ["main-slide-1","main-slide-2","main-slide-3"]
+  -
+    const slider = [
+      {name: "main-slide-1", path: "main-slide", alt: "Желтые ворота в нашу мастерскую."},
+      {name: "main-slide-2", path: "main-slide", alt: "Механих смотрит двигатель."},
+      {name: "main-slide-3", path: "main-slide", alt: "Механих смотрит под машиной."},
+    ]
 
   section.main-screen
     .main-screen__content
       h1.main-screen__title Специализированный Автосервис
-      h2.visual-hidden Главный экран
+      h2.visually-hidden Главный экран
       a.main-screen__phone(href="tel:+79991234567") +7 (999) 123-45-67
       dl.main-screen__contacts
         dt Работаем для вас:
@@ -16,7 +21,7 @@ mixin main-screen()
       .swiper-wrapper
         .swiper-slide
           each slide in slider
-            +img("conten",slide,jpg,780,650)
+            +picture(slide.path, slide.name, "jpg", 780, 650, slide.alt)
       .swiper-pagination
       .swiper-button-prev
       .swiper-button-next
